@@ -1,0 +1,92 @@
+<div id="wrapper">
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row bg-title">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <h4 class="page-title">Add Term and Condition</h4> 
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-info">
+                        <%= form_for @term do |form| %>
+                            <div class="form-group row">
+                                <label for="example-text-input" class="col-2 col-form-label">First Term</label>
+                                <div class="col-10">
+                                    <%= form.text_field :first_term, id: :term_first_term %>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="example-search-input" class="col-2 col-form-label">Second Term</label>
+                                <div class="col-10">
+                                    <%= form.text_field :second_term, id: :term_second_term %>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                    <label for="example-search-input" class="col-2 col-form-label">Third Term</label>
+                                    <div class="col-10">
+                                        <%= form.text_field :third_term, id: :term_third_term %>
+                                    </div>
+                            </div>
+                                
+                            <div class="form-group row">
+                                <label for="example-search-input" class="col-2 col-form-label">Fourth Term</label>
+                                <div class="col-10">
+                                    <%= form.text_field :fourth_term, id: :term_fourth_term %>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group row">
+                                <label for="example-search-input" class="col-2 col-form-label">Fifth Term</label>
+                                <div class="col-10">
+                                     <%= form.text_field :fivth_term, id: :term_fivth_term %>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group row">
+                                <label for="example-search-input" class="col-2 col-form-label">Sixth Term</label>
+                                <div class="col-10">
+                                    <%= form.text_field :sixth_term, id: :term_sixth_term %>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="example-search-input" class="col-2 col-form-label">Seventh Term</label>
+                                <div class="col-10">
+                                    <%= form.text_field :seventh_term, id: :term_seventh_term %>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="example-search-input" class="col-2 col-form-label">Eight Term</label>
+                                <div class="col-10">
+                                    <%= form.text_field :eight_term, id: :term_eight_term %>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group row">
+                                <label for="example-email-input" class="col-2 col-form-label">Ninth Term</label>
+                                <div class="col-10">
+                                    <%= form.text_field :ninth_term, id: :term_ninth_term %>
+                                    <div class="form-actions m-t-40">
+                                        <%= form.submit "Save", class: "btn btn-success" %><i class="fa fa-check"></i>
+                                        <%= link_to "Cancel", products_path, class: "btn btn-default" %>
+                                    </div>
+                                </div>
+                            </div>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+            <!--row -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+</div>
+   

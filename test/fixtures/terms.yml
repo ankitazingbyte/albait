@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_term: MyString
+  second_term: MyString
+  third_term: MyString
+  fourth_term: MyString
+  fivth_term: MyString
+  sixth_term: MyString
+  seventh_term: MyString
+  eight_term: MyString
+  ninth_term: MyString
+
+two:
+  first_term: MyString
+  second_term: MyString
+  third_term: MyString
+  fourth_term: MyString
+  fivth_term: MyString
+  sixth_term: MyString
+  seventh_term: MyString
+  eight_term: MyString
+  ninth_term: MyString

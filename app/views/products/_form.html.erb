@@ -1,0 +1,201 @@
+<div id="wrapper">
+        <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row bg-title">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <h4 class="page-title">Add New Product</h4>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading"> Add Product</div>
+                        <div class="panel-wrapper collapse in" aria-expanded="true">
+                            <div class="panel-body">
+                                <%= form_for @product do |form| %>
+                                    <div class="form-body">
+                                        <h3 class="box-title">About Product</h3>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Product Name</label>
+                                                    <%= form.text_field :name, id: :product_name, class: "form-control"  %>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Product Variant</label>
+                                                        <%#= form.select :variant_id, Variant.all.map{|v| [v.name, v.id]}%>
+                                                      
+                                                    </select> </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Category</label>
+                                                    <%= form.select :category_id, Category.all.map{|c| [c.name, c.id]}, class: "form-control" %>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">SubCategory</label>
+                                                    <%= form.select :subcategory_id, Subcategory.all.map{|s| [s.name, s.id]}%>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Price</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon"><i class="ti-money"></i></div>
+                                                        <%= form.number_field :price, id: :product_price, class: "form-control", placeholder: "153" %> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Discount</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon"><i class="ti-cut"></i></div>
+                                                        <%= form.text_field :discount, class: "form-control"  %> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <h3 class="box-title m-t-40">Product Description</h3>
+                                        <div class="row">
+                                            <div class="col-md-12 ">
+                                                <div class="form-group">
+                                                    <%= form.text_area :description, id: :product_description, Class: "form-control" %>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Variant SKU</label>
+                                                    <%= form.text_field :variant_sku, id: :product_variant_sku, class: "form-control" %> 
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Variant Grams</label>
+                                                    <%= form.text_field :variant_grams, id: :product_variant_grams, class: "form-control" %>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Variant Inventory Tracker</label>
+                                                    <%= form.text_field :variant_inventory_tracker, id: :product_variant_inventory_tracker, class: "form-control" %>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Variant Inventory QTY</label>
+                                                    <%= form.text_field :variant_inventory_qty, id: :product_variant_inventory_qty, class: "form-control" %>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Variant Inventory Policies</label>
+                                                <%= form.text_field :variant_inventory_policy, id: :product_variant_inventory_policy, class: "form-control" %> 
+                                            </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Variant FullFillment Services</label>
+                                                    <%= form.text_field :variant_inventory_service, id: :product_variant_inventory_service, class: "form-control" %> </div>
+                                            </div>
+                    
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Variant Price</label>
+                                                    <%= form.text_field :variant_price, id: :product_variant_price, class: "form-control" %></div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Variant Compare At Price</label>
+                                                    <%= form.text_field :variant_compare_at_price, id: :product_variant_compare_at_price, class: "form-control" %></div>
+                                            </div>
+                    
+                                             <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Variant Taxable</label>
+                                                    <%= form.text_field :variant_taxable, id: :product_variant_taxable, class: "form-control" %> </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Variant Barcode</label>
+                                                    <%= form.text_field :variant_barcode, id: :product_variant_barcode, class: "form-control" %></div>
+                                            </div>
+                    
+                                            <!--/span-->
+                                            <div class="col-md-3">
+                                                <h3 class="box-title m-t-20">Upload Image</h3>
+                                                <img id="img_prev" src="#" alt="your image" />
+                                                <div class="product-img">
+                                                        <%= form.file_field :image, onchange: "readURL(this);" %>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr> 
+                                    </div>
+                                    <div class="form-actions m-t-40">
+                                        <%= form.submit "Save", class: "btn btn-success" %> <i class="fa fa-check"></i>
+                                        <%= link_to "Cancel", products_path, class: "btn btn-default" %>
+                                    </div>
+                                <% end %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--row -->
+        </div>
+    </div>
+        <!-- /#page-wrapper -->
+</div>
+    <!-- /#wrapper -->
+   <!-- Assume jQuery is loaded -->
+    <script>
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+            $('#img_prev')
+              .attr('src', e.target.result)
+              .width(150)
+              .height(200);
+          };
+
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+    </script>

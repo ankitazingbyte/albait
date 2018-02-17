@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  category_id: 1
+  subcategory_id: 1
+  brand: MyString
+  name: MyString
+  description: MyString
+  image: MyString
+  price: 1
+  variant: MyString
+  variant_sku: MyString
+  variant_grams: MyString
+  variant_inventory_tracker: MyString
+  variant_inventory_qty: MyString
+  variant_inventory_policy: MyString
+
+two:
+  category_id: 1
+  subcategory_id: 1
+  brand: MyString
+  name: MyString
+  description: MyString
+  image: MyString
+  price: 1
+  variant: MyString
+  variant_sku: MyString
+  variant_grams: MyString
+  variant_inventory_tracker: MyString
+  variant_inventory_qty: MyString
+  variant_inventory_policy: MyString
